@@ -1,0 +1,32 @@
+.category-container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-title {
+  text-align: center;
+}
+
+.category-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.category-card {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 5px 4px 15px rgba(174, 174, 174, 0.4);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Ubuntu:wght@300;400;700&display=swap");
+
+.nav-bar {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  height: 50px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.nav-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #feae49;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-logo:hover {
+  color: #333;
+  opacity: 0.2;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.options {
+  color: #333;
+  opacity: 0.2;
+  padding: 5px 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.options:hover {
+  cursor: pointer;
+  color: #feae49;
+  background: #feae49;
+  border-radius: 20px;
+  color: white;
+  opacity: 0.5;
+  transition: all 0.3s ease 0s;
+}
+
+.active .options {
+  color: white;
+  background: #feae49;
+  border-radius: 20px;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}

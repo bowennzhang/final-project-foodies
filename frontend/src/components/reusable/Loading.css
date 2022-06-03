@@ -1,0 +1,53 @@
+.loading-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.loading-card li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  animation: grow 1.6s ease-in-out infinite;
+}
+
+@keyframes grow {
+  0%,
+  40%,
+  100% {
+    transform: scale(0.2);
+  }
+  20% {
+    transform: scale(0.6);
+  }
+}
+
+.loading-card li:nth-child(1) {
+  animation-delay: -1.4s;
+  background: #e6e5de;
+  box-shadow: 0 0 20px #e6e5de;
+}
+
+.loading-card li:nth-child(2) {
+  animation-delay: -1.2s;
+  background: #57bee6;
+  box-shadow: 0 0 20px #57bee6;
+}
+
+.loading-card li:nth-child(3) {
+  animation-delay: -1s;
+  background: #3d424a;
+  box-shadow: 0 0 20px #3d424a;
+}
+
+.loading-card li:nth-child(4) {
+  animation-delay: -0.8s;
+  background: #feae49;
+  box-shadow: 0 0 20px #feae49;
+}
