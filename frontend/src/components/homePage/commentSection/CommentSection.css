@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Ubuntu:wght@300;400;700&display=swap");
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+  border-top: 1px solid #e6e5de;
+  border-bottom: 1px solid #e6e5de;
+  height: 200px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comment-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #aaaaaa;
+  margin-top: 50px;
+}
+
+.comment-card {
+  display: flex;
+  margin-top: 45px;
+}
+
+.comment-input {
+  padding: 9px 10px;
+  border-radius: 10px;
+  border: 0.5px solid #aaaaaa;
+  font-size: 15px;
+  width: 300px;
+}
+
+.comment-btn {
+  border: none;
+  background: #feae49;
+  padding: 6px 25px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.comment-btn:hover {
+  background: #aaaaaa;
+  transition: all 0.3s ease-in-out;
+}

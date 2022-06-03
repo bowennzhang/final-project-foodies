@@ -49,13 +49,13 @@ export default App;
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background: var(--darkwhite-color);
 `;
 
 const Wrapper = styled.div`
   max-width: 1200px;
-  height: 100vh;
+  /* height: 100vh; */
   margin-left: auto;
   margin-right: auto;
   background: white;
