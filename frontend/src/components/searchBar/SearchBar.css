@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Ubuntu:wght@300;400;700&display=swap");
+
+.search-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #e6e5de;
+  padding-bottom: 10px;
+}
+
+.search-btn {
+  border: none;
+  background: #feae49;
+  padding: 5px 15px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.search-input {
+  padding: 5px 15px;
+  border-right: 1px solid #feae49;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  width: 310px;
+}
+
+.search-icon {
+  margin-left: 10px;
+  color: #feae49;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

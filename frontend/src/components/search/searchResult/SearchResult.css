@@ -1,0 +1,46 @@
+.search-results-single-result {
+  display: flex;
+  max-width: 800px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.search-results-business-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.search-results-subtitle {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.search-results-category {
+  margin-top: 10px;
+}
+
+.search-results-tag {
+  background: #e6e5de;
+  border-radius: 3px;
+  padding: 3px 5px;
+  margin-right: 5px;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.search-results-business-info {
+  min-width: 200px;
+  font-family: "Poppins", sans-serif;
+}
+
+.search-results-business-contact {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 50px;
+}

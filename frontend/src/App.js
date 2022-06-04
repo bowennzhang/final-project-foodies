@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Router>
-        <Container>
+        <Wrapper>
           <GlobalStyles />
           {/* <StartingPage /> */}
           <Wrapper>
@@ -39,7 +39,7 @@ function App() {
               </Route>
             </Switch>
           </Wrapper>
-        </Container>
+        </Wrapper>
       </Router>
     </>
   );
@@ -47,17 +47,44 @@ function App() {
 
 export default App;
 
-const Container = styled.div`
-  width: 100vw;
-  /* height: 100vh; */
-  background: var(--darkwhite-color);
-`;
+// const Container = styled.div`
+//   width: 100vw;
+//   height: 100vh;
+//   background: var(--darkwhite-color);
+// `;
 
 const Wrapper = styled.div`
-  max-width: 1200px;
-  /* height: 100vh; */
+  /* max-width: 1200px;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  background: white;
-  box-shadow: 0 10px 20px #bdbdbd;
+  background: white; */
+  background: none repeat scroll 0 0 #fff;
+  max-width: 1200px;
+  height: fit-content;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  &:before {
+    /* box-shadow: 0 10px 20px #bdbdbd; */
+    box-shadow: -20px 0 20px -20px #bdbdbd inset;
+    content: " ";
+    height: 100%;
+    left: -20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+  }
+
+  &:after {
+    box-shadow: 20px 0 20px -20px #bdbdbd inset;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 20px;
+  }
 `;
