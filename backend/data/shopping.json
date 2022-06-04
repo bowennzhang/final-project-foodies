@@ -1,0 +1,832 @@
+[
+  {
+    "id": "JHAWuH9hYITYzpLnNAN1qQ",
+    "alias": "la-maison-simons-montréal-4",
+    "name": "La Maison Simons",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wAkGbhLds4Gz3e71ZAjEIA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/la-maison-simons-montr%C3%A9al-4?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 75,
+    "categories": [
+      {
+        "alias": "deptstores",
+        "title": "Department Stores"
+      }
+    ],
+    "rating": 3.5,
+    "coordinates": {
+      "latitude": 45.501296,
+      "longitude": -73.572112
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "977 Rue Sainte-Catherine O",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H3B 4W3",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "977 Rue Sainte-Catherine O",
+        "Montreal, QC H3B 4W3",
+        "Canada"
+      ]
+    },
+    "phone": "+15142891840",
+    "display_phone": "+1 514-289-1840",
+    "distance": 1721.0175476318666
+  },
+  {
+    "id": "zrISVOWSwUkbEtWKAx04Hw",
+    "alias": "le-magasin-général-du-vieux-montréal-montréal-3",
+    "name": "Le Magasin Général du Vieux-Montréal",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/NZblAVmk2E1sTXyNZ4jzhg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/le-magasin-g%C3%A9n%C3%A9ral-du-vieux-montr%C3%A9al-montr%C3%A9al-3?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 15,
+    "categories": [
+      {
+        "alias": "giftshops",
+        "title": "Gift Shops"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.505052,
+      "longitude": -73.553938
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "34 Rue Saint-Paul O",
+      "address2": "Suite B",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2Y 1Y8",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "34 Rue Saint-Paul O",
+        "Suite B",
+        "Montreal, QC H2Y 1Y8",
+        "Canada"
+      ]
+    },
+    "phone": "+15143931111",
+    "display_phone": "+1 514-393-1111",
+    "distance": 2543.6702599219016
+  },
+  {
+    "id": "HLym8LvjIfaYzRqv3eqMwQ",
+    "alias": "centre-eaton-de-montréal-montréal-19",
+    "name": "Centre Eaton de Montréal",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/2qA80QefryBPa7pSkDtkwg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/centre-eaton-de-montr%C3%A9al-montr%C3%A9al-19?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 84,
+    "categories": [
+      {
+        "alias": "shoppingcenters",
+        "title": "Shopping Centers"
+      }
+    ],
+    "rating": 3.5,
+    "coordinates": {
+      "latitude": 45.502468,
+      "longitude": -73.571305
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "705 Rue Sainte-Catherine O",
+      "address2": null,
+      "address3": null,
+      "city": "Montreal",
+      "zip_code": "H3B 4G5",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "705 Rue Sainte-Catherine O",
+        "Montreal, QC H3B 4G5",
+        "Canada"
+      ]
+    },
+    "phone": "+15142883708",
+    "display_phone": "+1 514-288-3708",
+    "distance": 1647.4437840638336
+  },
+  {
+    "id": "jB2fgsDIfjHbLgLeNfKyxA",
+    "alias": "boutique-1861-montréal-3",
+    "name": "Boutique 1861",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/UizLIyu9dL6PNpeUzIXlSA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/boutique-1861-montr%C3%A9al-3?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 19,
+    "categories": [
+      {
+        "alias": "womenscloth",
+        "title": "Women's Clothing"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.5142517,
+      "longitude": -73.5739288
+    },
+    "transactions": [],
+    "price": "$$$",
+    "location": {
+      "address1": "3670 Saint-Laurent",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2X 2V5",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "3670 Saint-Laurent",
+        "Montreal, QC H2X 2V5",
+        "Canada"
+      ]
+    },
+    "phone": "+15146706110",
+    "display_phone": "+1 514-670-6110",
+    "distance": 767.0519677731892
+  },
+  {
+    "id": "D8MMxC8FVHO1n_qCN0yX3A",
+    "alias": "bonjour-montréal-montréal-5",
+    "name": "Bonjour Montréal",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/oUfEo3cpZ2m6PfEf_LsCuw/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/bonjour-montr%C3%A9al-montr%C3%A9al-5?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 2,
+    "categories": [
+      {
+        "alias": "giftshops",
+        "title": "Gift Shops"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.508262,
+      "longitude": -73.552889
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "421 Place Jacques-Cartier",
+      "address2": "",
+      "address3": null,
+      "city": "Montreal",
+      "zip_code": "H2Y 3B1",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "421 Place Jacques-Cartier",
+        "Montreal, QC H2Y 3B1",
+        "Canada"
+      ]
+    },
+    "phone": "+15148665757",
+    "display_phone": "+1 514-866-5757",
+    "distance": 2496.8885558976913
+  },
+  {
+    "id": "ePjPv_OMGAOM1jhzWjHlLA",
+    "alias": "cul-de-sac-montréal-5",
+    "name": "Cul-de-Sac",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/J1AobpryMI2W3gCRBFggNg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/cul-de-sac-montr%C3%A9al-5?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 13,
+    "categories": [
+      {
+        "alias": "vintage",
+        "title": "Used, Vintage & Consignment"
+      },
+      {
+        "alias": "artsandcrafts",
+        "title": "Arts & Crafts"
+      },
+      {
+        "alias": "womenscloth",
+        "title": "Women's Clothing"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.51531,
+      "longitude": -73.5762
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "3794 Boulevard  Saint-Laurent",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2W 1Y3",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "3794 Boulevard  Saint-Laurent",
+        "Montreal, QC H2W 1Y3",
+        "Canada"
+      ]
+    },
+    "phone": "+15145048417",
+    "display_phone": "+1 514-504-8417",
+    "distance": 590.4871201614568
+  },
+  {
+    "id": "bmBlZrRCSF9EQ1GZbn44uA",
+    "alias": "citizen-vintage-montréal-2",
+    "name": "Citizen Vintage",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/zHyIWDkeR-tDk4Fv5DxyjA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/citizen-vintage-montr%C3%A9al-2?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 18,
+    "categories": [
+      {
+        "alias": "vintage",
+        "title": "Used, Vintage & Consignment"
+      }
+    ],
+    "rating": 4.0,
+    "coordinates": {
+      "latitude": 45.524581,
+      "longitude": -73.596669
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "5330 Boulevard Saint-Laurent",
+      "address2": null,
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2T 1S1",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "5330 Boulevard Saint-Laurent",
+        "Montreal, QC H2T 1S1",
+        "Canada"
+      ]
+    },
+    "phone": "+15144392774",
+    "display_phone": "+1 514-439-2774",
+    "distance": 1511.806061650853
+  },
+  {
+    "id": "Z7liE0HnPu6JReTv5IYkRg",
+    "alias": "etsy-made-in-canada-montréal",
+    "name": "Etsy Made In Canada",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/7EiaXTWV31SfvWFU-II_HQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/etsy-made-in-canada-montr%C3%A9al?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 1,
+    "categories": [
+      {
+        "alias": "popupshops",
+        "title": "Pop-up Shops"
+      }
+    ],
+    "rating": 5.0,
+    "coordinates": {
+      "latitude": 45.5423508,
+      "longitude": -73.5645294
+    },
+    "transactions": [],
+    "price": "$$$",
+    "location": {
+      "address1": "Technopole Angus",
+      "address2": "2600 Rue William Tremblay",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H1Y 3J2",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "Technopole Angus",
+        "2600 Rue William Tremblay",
+        "Montreal, QC H1Y 3J2",
+        "Canada"
+      ]
+    },
+    "phone": "",
+    "display_phone": "",
+    "distance": 3480.685010929879
+  },
+  {
+    "id": "kjUDcF0cnLxktgT3DKqA1g",
+    "alias": "unicorn-boutique-montréal-2",
+    "name": "Unicorn Boutique",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/RuGJaeY_AOjL4vm2oYW9Pg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/unicorn-boutique-montr%C3%A9al-2?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 10,
+    "categories": [
+      {
+        "alias": "womenscloth",
+        "title": "Women's Clothing"
+      },
+      {
+        "alias": "accessories",
+        "title": "Accessories"
+      },
+      {
+        "alias": "lingerie",
+        "title": "Lingerie"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.52358,
+      "longitude": -73.59343
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "5135 Boulevard Saint-Laurent",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2T 1R9",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "5135 Boulevard Saint-Laurent",
+        "Montreal, QC H2T 1R9",
+        "Canada"
+      ]
+    },
+    "phone": "+15145442828",
+    "display_phone": "+1 514-544-2828",
+    "distance": 1269.0001451473422
+  },
+  {
+    "id": "jga6-8x_AQleG5j5qoUwhw",
+    "alias": "marché-artisans-montréal",
+    "name": "Marché Artisans",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/0ptjg3WddRvaKmTv9jktOA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/march%C3%A9-artisans-montr%C3%A9al?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 16,
+    "categories": [
+      {
+        "alias": "publicmarkets",
+        "title": "Public Markets"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.50026947899885,
+      "longitude": -73.56837121386206
+    },
+    "transactions": [],
+    "price": "$$$",
+    "location": {
+      "address1": "900 Boulevard René-Lévesque O",
+      "address2": "",
+      "address3": null,
+      "city": "Montreal",
+      "zip_code": "H3B 4A5",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "900 Boulevard René-Lévesque O",
+        "Montreal, QC H3B 4A5",
+        "Canada"
+      ]
+    },
+    "phone": "+15149542882",
+    "display_phone": "+1 514-954-2882",
+    "distance": 1979.9352649740233
+  },
+  {
+    "id": "W4sUcmp8VDB_RMgj9ps0yg",
+    "alias": "tan-tan-kat-montréal",
+    "name": "Tan Tan Kat",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ozuoVEFC57YFxuiEffvmjg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/tan-tan-kat-montr%C3%A9al?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 3,
+    "categories": [
+      {
+        "alias": "giftshops",
+        "title": "Gift Shops"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.5199727,
+      "longitude": -73.5744777
+    },
+    "transactions": [],
+    "price": "$",
+    "location": {
+      "address1": "3920 Rue Saint-Denis",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2W 2M2",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "3920 Rue Saint-Denis",
+        "Montreal, QC H2W 2M2",
+        "Canada"
+      ]
+    },
+    "phone": "+15144513888",
+    "display_phone": "+1 514-451-3888",
+    "distance": 945.4897082505112
+  },
+  {
+    "id": "w9m3ecVIWO0z0I0m_l8Cpw",
+    "alias": "jeans-jeans-jeans-montréal-4",
+    "name": "Jeans Jeans Jeans",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/G7iYB9PCPqL-y0X46jk-Gw/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/jeans-jeans-jeans-montr%C3%A9al-4?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 35,
+    "categories": [
+      {
+        "alias": "outlet_stores",
+        "title": "Outlet Stores"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.52753,
+      "longitude": -73.59799
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "5575 Casgrain Avenue",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2T 1Y1",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "5575 Casgrain Avenue",
+        "Montreal, QC H2T 1Y1",
+        "Canada"
+      ]
+    },
+    "phone": "+15142793303",
+    "display_phone": "+1 514-279-3303",
+    "distance": 1849.826799804607
+  },
+  {
+    "id": "b_cb87bZ4W87RqXxbJeuLg",
+    "alias": "eva-b-montréal-2",
+    "name": "Eva B",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/15EcwTAam0hjH0AnMZ6g2Q/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/eva-b-montr%C3%A9al-2?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 110,
+    "categories": [
+      {
+        "alias": "vintage",
+        "title": "Used, Vintage & Consignment"
+      },
+      {
+        "alias": "vegan",
+        "title": "Vegan"
+      },
+      {
+        "alias": "cafes",
+        "title": "Cafes"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.5115512,
+      "longitude": -73.5670292
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "2013 St Laurent Blvd",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2X 2T3",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "2013 St Laurent Blvd",
+        "Montreal, QC H2X 2T3",
+        "Canada"
+      ]
+    },
+    "phone": "+15148498246",
+    "display_phone": "+1 514-849-8246",
+    "distance": 1332.6631321551488
+  },
+  {
+    "id": "J2wA3jH3mXujTTxsRYtDmA",
+    "alias": "boutique-1861-montréal-2",
+    "name": "Boutique 1861",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/1Us_YOmn56KJV_7ikAPgbA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/boutique-1861-montr%C3%A9al-2?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 20,
+    "categories": [
+      {
+        "alias": "womenscloth",
+        "title": "Women's Clothing"
+      }
+    ],
+    "rating": 4.0,
+    "coordinates": {
+      "latitude": 45.4931,
+      "longitude": -73.58053
+    },
+    "transactions": [],
+    "price": "$$$",
+    "location": {
+      "address1": "1861, Rue Sainte-Catherine Ouest",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H3H 1M1",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "1861, Rue Sainte-Catherine Ouest",
+        "Montreal, QC H3H 1M1",
+        "Canada"
+      ]
+    },
+    "phone": "+15149081861",
+    "display_phone": "+1 514-908-1861",
+    "distance": 2392.1065195321466
+  },
+  {
+    "id": "lutBpL-MiGo3FcpcEsou7g",
+    "alias": "the-little-shop-montréal-2",
+    "name": "The Little Shop",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Kay9DG6LHIWI61QgnKTjsw/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/the-little-shop-montr%C3%A9al-2?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 8,
+    "categories": [
+      {
+        "alias": "vintage",
+        "title": "Used, Vintage & Consignment"
+      },
+      {
+        "alias": "thrift_stores",
+        "title": "Thrift Stores"
+      }
+    ],
+    "rating": 5.0,
+    "coordinates": {
+      "latitude": 45.52512,
+      "longitude": -73.62727
+    },
+    "transactions": [],
+    "price": "$",
+    "location": {
+      "address1": "1002 Avenue Ogilvy",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H3N 1P5",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "1002 Avenue Ogilvy",
+        "Montreal, QC H3N 1P5",
+        "Canada"
+      ]
+    },
+    "phone": "+15149923364",
+    "display_phone": "+1 514-992-3364",
+    "distance": 3602.9488804406633
+  },
+  {
+    "id": "P4Ztw7cCP5uCQ6zT6W1S9A",
+    "alias": "neon-montréal-10",
+    "name": "NEON",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/vGMzCh5I6AAkY-_Snsw_8Q/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/neon-montr%C3%A9al-10?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 3,
+    "categories": [
+      {
+        "alias": "womenscloth",
+        "title": "Women's Clothing"
+      },
+      {
+        "alias": "menscloth",
+        "title": "Men's Clothing"
+      },
+      {
+        "alias": "shoes",
+        "title": "Shoe Stores"
+      }
+    ],
+    "rating": 5.0,
+    "coordinates": {
+      "latitude": 45.522289,
+      "longitude": -73.578887
+    },
+    "transactions": [],
+    "price": "$",
+    "location": {
+      "address1": "4251 Saint Denis",
+      "address2": null,
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2J 2K9",
+      "country": "CA",
+      "state": "QC",
+      "display_address": ["4251 Saint Denis", "Montreal, QC H2J 2K9", "Canada"]
+    },
+    "phone": "+15148452013",
+    "display_phone": "+1 514-845-2013",
+    "distance": 945.1088294681449
+  },
+  {
+    "id": "WG7Ot_BGB1T32WJYwNw-bA",
+    "alias": "kitschnswell-montréal",
+    "name": "Kitsch'nSwell",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/TEI_Rn-nA4Dn_s7OD7cEtg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/kitschnswell-montr%C3%A9al?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 8,
+    "categories": [
+      {
+        "alias": "vintage",
+        "title": "Used, Vintage & Consignment"
+      },
+      {
+        "alias": "accessories",
+        "title": "Accessories"
+      },
+      {
+        "alias": "womenscloth",
+        "title": "Women's Clothing"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.517168,
+      "longitude": -73.579753
+    },
+    "transactions": [],
+    "price": "$$$",
+    "location": {
+      "address1": "4065 Boulevard Saint-Laurent",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2W 1Y7",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "4065 Boulevard Saint-Laurent",
+        "Montreal, QC H2W 1Y7",
+        "Canada"
+      ]
+    },
+    "phone": "+15143586336",
+    "display_phone": "+1 514-358-6336",
+    "distance": 427.6274433009476
+  },
+  {
+    "id": "sQjM3yp_KC2irHRTLIKl-w",
+    "alias": "cf-carrefour-laval-laval",
+    "name": "CF Carrefour Laval",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Xs_X9bTEXRe019JB4MJrqQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/cf-carrefour-laval-laval?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 48,
+    "categories": [
+      {
+        "alias": "shoppingcenters",
+        "title": "Shopping Centers"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.57087533880858,
+      "longitude": -73.75185877055219
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "3035 Boulevard le Carrefour",
+      "address2": "",
+      "address3": "",
+      "city": "Laval",
+      "zip_code": "H7T 1C8",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "3035 Boulevard le Carrefour",
+        "Laval, QC H7T 1C8",
+        "Canada"
+      ]
+    },
+    "phone": "+14506871360",
+    "display_phone": "+1 450-687-1360",
+    "distance": 14521.308469940977
+  },
+  {
+    "id": "SsNsU8ATvp7ut04lv8Nfaw",
+    "alias": "mile-end-kicks-montréal-2",
+    "name": "Mile End Kicks",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/eYoOYqvTYNyaqMhnAZQ3lQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/mile-end-kicks-montr%C3%A9al-2?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 11,
+    "categories": [
+      {
+        "alias": "shoes",
+        "title": "Shoe Stores"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.5219915,
+      "longitude": -73.6013034
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "5403 Avenue du Parc",
+      "address2": null,
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2V 4G9",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "5403 Avenue du Parc",
+        "Montreal, QC H2V 4G9",
+        "Canada"
+      ]
+    },
+    "phone": "+15146574033",
+    "display_phone": "+1 514-657-4033",
+    "distance": 1607.1689792776751
+  },
+  {
+    "id": "hMCj-Rhmj-bj0O4dx7qrtQ",
+    "alias": "les-étoffes-montréal-3",
+    "name": "Les Étoffes",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/X4rbZoliyNu5neAsjUHz9A/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/les-%C3%A9toffes-montr%C3%A9al-3?adjust_creative=FPFiD77CemPsmHKhG-P5dg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FPFiD77CemPsmHKhG-P5dg",
+    "review_count": 10,
+    "categories": [
+      {
+        "alias": "womenscloth",
+        "title": "Women's Clothing"
+      },
+      {
+        "alias": "menscloth",
+        "title": "Men's Clothing"
+      },
+      {
+        "alias": "accessories",
+        "title": "Accessories"
+      }
+    ],
+    "rating": 4.5,
+    "coordinates": {
+      "latitude": 45.5244799,
+      "longitude": -73.59556
+    },
+    "transactions": [],
+    "price": "$$$$",
+    "location": {
+      "address1": "5253 Boul. Saint-Laurent",
+      "address2": "",
+      "address3": "",
+      "city": "Montreal",
+      "zip_code": "H2T 1S4",
+      "country": "CA",
+      "state": "QC",
+      "display_address": [
+        "5253 Boul. Saint-Laurent",
+        "Montreal, QC H2T 1S4",
+        "Canada"
+      ]
+    },
+    "phone": "+15145445500",
+    "display_phone": "+1 514-544-5500",
+    "distance": 1446.3994441585403
+  }
+]
