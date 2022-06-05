@@ -9,6 +9,10 @@ import NavBar from "./components/reusable/NavBar";
 import Profile from "./components/profile/Profile";
 import Loading from "./components/reusable/Loading";
 import Search from "./components/search/Search";
+import Restaurants from "./components/allStores/restaurant/Restaurants";
+import Coffee from "./components/allStores/coffee/Coffee";
+import Bars from "./components/allStores/bars/Bars";
+import Shopping from "./components/allStores/shopping/Shopping";
 
 // import StartingPage from "./components/startPage/StartingPage";
 
@@ -32,6 +36,22 @@ function App() {
 
               <Route path="/search">
                 <Search />
+              </Route>
+
+              <Route path="/restaurants">
+                <Restaurants />
+              </Route>
+
+              <Route path="/coffee">
+                <Coffee />
+              </Route>
+
+              <Route path="/bars">
+                <Bars />
+              </Route>
+
+              <Route path="/shopping">
+                <Shopping />
               </Route>
 
               <Route path="/profile">
@@ -63,7 +83,6 @@ const Wrapper = styled.div`
   max-width: 1200px;
   height: fit-content;
   position: relative;
-
   margin-left: auto;
   margin-right: auto;
 

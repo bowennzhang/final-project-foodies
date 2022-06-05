@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Ubuntu:wght@300;400;700&display=swap");
+
+.restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  min-height: 800px;
+}
+
+.restaurant-result {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.restaurant-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.restaurant-subtitle {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.restaurant-category {
+  margin-top: 10px;
+}
+
+.restaurant-tag {
+  background: #e6e5de;
+  border-radius: 3px;
+  padding: 3px 5px;
+  margin-right: 5px;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.restaurant-info {
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+}
+
+.restaurant-rating {
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  background: #f4f4f4;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-contact {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 18px;
+}
+
+.restaurant-phone {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+.restaurant-address {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}

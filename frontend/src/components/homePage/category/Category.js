@@ -4,6 +4,7 @@ import LocalBarIcon from "@mui/icons-material/LocalBar";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 
 import "./Category.css";
+import { NavLink } from "react-router-dom";
 
 const Category = () => {
   return (
@@ -11,25 +12,33 @@ const Category = () => {
       <p className="category-title">Categories</p>
 
       <div className="category-wrapper">
-        <div className="category-card">
-          <LocalCafeIcon />
-          <p>coffee</p>
-        </div>
+        <NavLink to="/coffee">
+          <div className="category-card">
+            <LocalCafeIcon />
+            <p>coffee</p>
+          </div>
+        </NavLink>
 
-        <div className="category-card">
-          <RestaurantIcon />
-          <p>restaurant</p>
-        </div>
+        <NavLink to="/restaurants">
+          <div className="category-card">
+            <RestaurantIcon />
+            <p>restaurant</p>
+          </div>
+        </NavLink>
 
-        <div className="category-card">
-          <LocalBarIcon />
-          <p>bar</p>
-        </div>
+        <NavLink to="/bars">
+          <div className="category-card">
+            <LocalBarIcon />
+            <p>bar</p>
+          </div>
+        </NavLink>
 
-        <div className="category-card">
-          <ShoppingBasketIcon />
-          <p>shopping</p>
-        </div>
+        <NavLink to="/shopping">
+          <div className="category-card">
+            <ShoppingBasketIcon />
+            <p>shopping</p>
+          </div>
+        </NavLink>
       </div>
     </div>
   );

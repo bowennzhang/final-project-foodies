@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
-import RestaurantProvider from "./components/contexts/RestaurantsContext";
+import AllStoresProvider from "./components/contexts/allStoresContext";
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
@@ -15,8 +15,8 @@ root.render(
     clientId={clientId}
     redirectUri={window.location.origin}
   >
-    <RestaurantProvider>
+    <AllStoresProvider>
       <App />
-    </RestaurantProvider>
+    </AllStoresProvider>
   </Auth0Provider>
 );

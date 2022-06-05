@@ -1,8 +1,25 @@
 "use strict";
 
+// Connect to MongoDB
+const { MongoClient } = require("mongodb");
+require("dotenv").config();
+const { MONGO_URI } = process.env;
+
+const options = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+};
+
 // import the needed node_modules.
 const express = require("express");
 const morgan = require("morgan");
+
+const {
+  getRestaurants,
+  getCoffee,
+  getBars,
+  getShopping,
+} = require("./handlers");
 
 express()
   // Below are methods that are included in express(). We chain them for convenience.
@@ -14,6 +31,11 @@ express()
 
   // Any requests for static files will go into the public folder
   .use(express.static("public"))
+
+  .get("/api/get-restaurants", getRestaurants)
+  .get("/api/get-coffee", getCoffee)
+  .get("/api/get-bars", getBars)
+  .get("/api/get-shopping", getShopping)
 
   // this is our catch all endpoint.
   .get("*", (req, res) => {

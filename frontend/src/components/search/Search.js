@@ -1,20 +1,12 @@
-import { useEffect, useState, useContext } from "react";
-
-import { RestaurantContext } from "../contexts/RestaurantsContext";
-
 import SearchBar from "../searchBar/SearchBar";
-import SearchResult from "./searchResult/SearchResult";
 
 import "./Search.css";
-import Loading from "../reusable/Loading";
 
 // const YELP_API_KEY =
 //   "4enntBHfeYier6LSVphCx9BsPZuovcDrN56fft5v_CsaM9Jbp_EB9ERPLGJwGuxsTiQHv1qQW7Y_YT3SihiO3WKazr2dYZRPqxFFlF7qjWKfLEE9mfIUK8GlavOOYnYx";
 
 const Search = () => {
   // const [restaurantData, setRestaurantData] = useState([]);
-
-  const { restaurantData } = useContext(RestaurantContext);
 
   // const getRestaurantFromYelp = () => {
   //   const yelpUrl =
@@ -39,18 +31,9 @@ const Search = () => {
 
   // console.log(restaurantData);
 
-  if (!restaurantData) {
-    return <Loading />;
-  }
-
   return (
     <div>
       <SearchBar />
-      <div className="search-results">
-        {restaurantData.map((restaurant) => {
-          return <SearchResult key={restaurant.id} restaurant={restaurant} />;
-        })}
-      </div>
     </div>
   );
 };
