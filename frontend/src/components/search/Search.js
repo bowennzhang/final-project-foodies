@@ -1,47 +1,28 @@
-import Bars from "../allStores/bars/Bars";
-import Coffee from "../allStores/coffee/Coffee";
-import Restaurants from "../allStores/restaurant/Restaurants";
-import Shopping from "../allStores/shopping/Shopping";
+import { useState, useEffect } from "react";
+
 import SearchBar from "../searchBar/SearchBar";
 
 import "./Search.css";
-
-// const YELP_API_KEY =
-//   "4enntBHfeYier6LSVphCx9BsPZuovcDrN56fft5v_CsaM9Jbp_EB9ERPLGJwGuxsTiQHv1qQW7Y_YT3SihiO3WKazr2dYZRPqxFFlF7qjWKfLEE9mfIUK8GlavOOYnYx";
+import SearchResult from "./searchResult/SearchResult";
 
 const Search = () => {
-  // const [restaurantData, setRestaurantData] = useState([]);
+  const [restaurantData, setRestaurantData] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  // const getRestaurantFromYelp = () => {
-  //   const yelpUrl =
-  //     "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurants&location=montreal";
+  useEffect(() => {
+    fetch("/api/get-all")
+      .then((res) => res.json())
+      .then((data) => {
+        setRestaurantData(data.data.businesses);
 
-  //   const apiOptions = {
-  //     headers: {
-  //       Authorization: `Bearer ${YELP_API_KEY}`,
-  //       Origin: "http://localhost:3000",
-  //       "Content-Type": "application/json",
-  //       withCredentials: true,
-  //     },
-  //   };
-  //   return fetch(yelpUrl, apiOptions)
-  //     .then((res) => res.json())
-  //     .then((json) => setRestaurantData(json.businesses));
-  // };
-
-  // useEffect(() => {
-  //   getRestaurantFromYelp();
-  // }, []);
-
-  // console.log(restaurantData);
+        setIsLoaded(true);
+      });
+  }, []);
 
   return (
     <div>
       <SearchBar />
-      {/* <Restaurants />
-      <Coffee />
-      <Bars />
-      <Shopping /> */}
+      <SearchResult restaurants={restaurantData} isLoaded={isLoaded} />
     </div>
   );
 };

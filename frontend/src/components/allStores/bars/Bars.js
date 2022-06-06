@@ -22,27 +22,16 @@ const Bars = () => {
                     alt="business"
                     className="bars-image"
                   />
-
                   <div className="bars-info">
-                    <div className="bars-subtitle">{bars.name}</div>
+                    <div>
+                      <div className="bars-subtitle">{bars.name}</div>
 
-                    <div className="bars-category">
-                      <p>
-                        {bars.price}{" "}
+                      <div className="bars-category">
+                        <span className="bars-price">{bars.price}</span>
                         <span className="bars-tag">
                           {bars.categories[0].title}
                         </span>
-                      </p>
-                    </div>
-
-                    <p className="bars-rating">{bars.rating}</p>
-
-                    <div className="bars-contact">
-                      <p className="bars-phone">{bars.display_phone}</p>
-                      <div className="bars-address">
-                        <p>{bars.location.display_address[0]}</p>
-                        <p>{bars.location.display_address[1]}</p>
-                        <p>{bars.location.display_address[2]}</p>
+                        <p className="bars-rating">{bars.rating}</p>
                       </div>
                     </div>
                   </div>

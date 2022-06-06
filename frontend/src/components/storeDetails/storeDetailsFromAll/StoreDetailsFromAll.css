@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;800&family=Ubuntu:wght@300;400;700&display=swap");
+
+.store-details-container {
+  min-height: 1000px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.store-details-card {
+  width: 900px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 0;
+  border-radius: 20px;
+  box-shadow: 5px 4px 15px rgba(174, 174, 174, 0.4);
+}
+
+.store-details-info {
+  font-family: "Poppins", sans-serif;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.store-details-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.store-details-image {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.store-details-btn {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background: #feae49;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 0;
+  border-radius: 20px;
+  cursor: pointer;
+}

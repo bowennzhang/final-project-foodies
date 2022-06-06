@@ -24,25 +24,15 @@ const Coffee = () => {
                   />
 
                   <div className="coffee-info">
-                    <div className="coffee-subtitle">{coffee.name}</div>
+                    <div>
+                      <div className="coffee-subtitle">{coffee.name}</div>
 
-                    <div className="coffee-category">
-                      <p>
-                        {coffee.price}{" "}
+                      <div className="coffee-category">
+                        <span className="coffee-price">{coffee.price}</span>
                         <span className="coffee-tag">
                           {coffee.categories[0].title}
                         </span>
-                      </p>
-                    </div>
-
-                    <p className="coffee-rating">{coffee.rating}</p>
-
-                    <div className="coffee-contact">
-                      <p className="coffee-phone">{coffee.display_phone}</p>
-                      <div className="coffee-address">
-                        <p>{coffee.location.display_address[0]}</p>
-                        <p>{coffee.location.display_address[1]}</p>
-                        <p>{coffee.location.display_address[2]}</p>
+                        <p className="coffee-rating">{coffee.rating}</p>
                       </div>
                     </div>
                   </div>

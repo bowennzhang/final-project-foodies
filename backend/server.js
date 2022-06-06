@@ -20,7 +20,8 @@ const {
   getBars,
   getShopping,
   getSingleStore,
-  // getAllStore,
+  getAllStore,
+  getStoreDetailsFromAll,
 } = require("./handlers");
 
 express()
@@ -41,7 +42,8 @@ express()
 
   .get("/api/get-store/:id", getSingleStore)
 
-  // .get("/api/get-all", getAllStore)
+  .get("/api/get-all", getAllStore)
+  .get("/api/get-all/:id", getStoreDetailsFromAll)
 
   // this is our catch all endpoint.
   .get("*", (req, res) => {

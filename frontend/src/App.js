@@ -14,6 +14,7 @@ import Coffee from "./components/allStores/coffee/Coffee";
 import Bars from "./components/allStores/bars/Bars";
 import Shopping from "./components/allStores/shopping/Shopping";
 import StoreDetails from "./components/storeDetails/StoreDetails";
+import StoreDetailsFromAll from "./components/storeDetails/storeDetailsFromAll/StoreDetailsFromAll";
 
 // import StartingPage from "./components/startPage/StartingPage";
 
@@ -57,6 +58,10 @@ function App() {
 
               <Route path="/storeDetails/:id">
                 <StoreDetails />
+              </Route>
+
+              <Route path="/storeDetail/:id">
+                <StoreDetailsFromAll />
               </Route>
 
               <Route path="/profile">

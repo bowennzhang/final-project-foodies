@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import { useParams, NavLink } from "react-router-dom";
 
-import Loading from "../reusable/Loading";
+import Loading from "../../reusable/Loading";
 
-import "./StoreDetails.css";
+import "./StoreDetailsFromAll.css";
 
-const StoreDetails = () => {
+const StoreDetailsFromAll = () => {
   const { id } = useParams();
 
   const [isLoaded, setIsLoaded] = useState(false);
   const [singleStore, setSingleStore] = useState({});
 
   useEffect(() => {
-    fetch(`/api/get-store/${id}`)
+    fetch(`/api/get-all/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        setSingleStore(data.data);
-
+        setSingleStore(data.result4[0]);
+        console.log(data);
         setIsLoaded(true);
       })
       .catch((err) => {
@@ -24,7 +24,6 @@ const StoreDetails = () => {
       });
   }, [id]);
 
-  //   console.log(singleStore.location.address1);
   return (
     <>
       {isLoaded ? (
@@ -58,4 +57,4 @@ const StoreDetails = () => {
   );
 };
 
-export default StoreDetails;
+export default StoreDetailsFromAll;

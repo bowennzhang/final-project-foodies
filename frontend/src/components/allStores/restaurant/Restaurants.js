@@ -27,27 +27,19 @@ const Restaurants = () => {
                   />
 
                   <div className="restaurant-info">
-                    <div className="restaurant-subtitle">{restaurant.name}</div>
+                    <div>
+                      <div className="restaurant-subtitle">
+                        {restaurant.name}
+                      </div>
 
-                    <div className="restaurant-category">
-                      <p>
-                        {restaurant.price}{" "}
+                      <div className="restaurant-category">
+                        <span className="restaurant-price">
+                          {restaurant.price}
+                        </span>
                         <span className="restaurant-tag">
                           {restaurant.categories[0].title}
                         </span>
-                      </p>
-                    </div>
-
-                    <p className="restaurant-rating">{restaurant.rating}</p>
-
-                    <div className="restaurant-contact">
-                      <p className="restaurant-phone">
-                        {restaurant.display_phone}
-                      </p>
-                      <div className="restaurant-address">
-                        <p>{restaurant.location.display_address[0]}</p>
-                        <p>{restaurant.location.display_address[1]}</p>
-                        <p>{restaurant.location.display_address[2]}</p>
+                        <p className="restaurant-rating">{restaurant.rating}</p>
                       </div>
                     </div>
                   </div>

@@ -1,7 +1,8 @@
 "use strict";
+const fetch = (...args) =>
+  import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
 // import axios from "axios";
-
 const { MongoClient } = require("mongodb");
 require("dotenv").config();
 
@@ -90,29 +91,67 @@ const getSingleStore = async (req, res) => {
   }
 };
 
-// const getAllStore = async (req, res) => {
-//   try {
-//     const config = {
-//       headers: {
-//         Authorization: `Bearer ${MONGO_URI}`,
-//       },
-//       params: {
-//         term: "restaurants",
-//         location: "montreal",
-//         radius: 1609,
-//         sort_by: "relevance",
-//         limit: 50,
-//       },
-//     };
-//     axios
-//       .get("https://api.yelp.com/v3/businesses/search", config)
-//       .then((response) => {
-//         console.log(response); //These are the results sent back from the API!
-//       });
-//   } catch (err) {
-//     res.status(500).json({ status: 500, message: err.message });
-//   }
-// };
+const getAllStore = async (req, res) => {
+  const yelpUrl =
+    "https://api.yelp.com/v3/businesses/search?term=restaurants&location=montreal&limit=20";
+
+  try {
+    const apiOptions = {
+      headers: {
+        Authorization: `Bearer ${YELP_API_KEY}`,
+        Origin: "http://localhost:3000",
+        "Content-Type": "application/json",
+        withCredentials: true,
+      },
+    };
+
+    const response = await fetch(yelpUrl, apiOptions);
+    const data = await response.json();
+
+    console.log(data);
+
+    res.status(200).json({ status: 200, data });
+  } catch (err) {
+    res.status(500).json({ status: 500, message: err.message });
+  }
+};
+
+const getStoreDetailsFromAll = async (req, res) => {
+  const yelpUrl =
+    "https://api.yelp.com/v3/businesses/search?term=restaurants&location=montreal&limit=20";
+
+  try {
+    const apiOptions = {
+      headers: {
+        Authorization: `Bearer ${YELP_API_KEY}`,
+        Origin: "http://localhost:3000",
+        "Content-Type": "application/json",
+        withCredentials: true,
+      },
+    };
+
+    const response = await fetch(yelpUrl, apiOptions);
+    const data = await response.json();
+    // console.log(data);
+    const id = req.params.id;
+    // console.log(Object.entries(data));
+    // console.log(id);
+    // const data1 = data.businesses;
+    // console.log(data1);
+    const result = Object.entries(data);
+    const result2 = result[0];
+    const result3 = result2[1];
+
+    const result4 = result3.filter((match) => {
+      return id === match.id;
+    });
+    console.log(result4);
+
+    res.status(200).json({ status: 200, id, result4 });
+  } catch (err) {
+    res.status(500).json({ status: 500, message: err.message });
+  }
+};
 
 module.exports = {
   getRestaurants,
@@ -120,5 +159,6 @@ module.exports = {
   getBars,
   getShopping,
   getSingleStore,
-  // getAllStore,
+  getAllStore,
+  getStoreDetailsFromAll,
 };

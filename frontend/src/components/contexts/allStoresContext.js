@@ -4,8 +4,6 @@ import { createContext, useState, useEffect } from "react";
 export const AllStoresContext = createContext(null);
 
 const AllStoresProvider = ({ children }) => {
-  const [allStore, setAllStore] = useState([]);
-
   const [restaurantData, setRestaurantData] = useState([]);
   const [coffeeData, setCoffeeData] = useState([]);
   const [barsData, setBarsData] = useState([]);
@@ -53,68 +51,6 @@ const AllStoresProvider = ({ children }) => {
       });
   }, []);
 
-  // const YELP_API_KEY =
-  //   "4enntBHfeYier6LSVphCx9BsPZuovcDrN56fft5v_CsaM9Jbp_EB9ERPLGJwGuxsTiQHv1qQW7Y_YT3SihiO3WKazr2dYZRPqxFFlF7qjWKfLEE9mfIUK8GlavOOYnYx";
-
-  // const getRestaurantFromYelp = () => {
-  //   const yelpUrl =
-  //     "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurants&location=montreal";
-
-  //   const apiOptions = {
-  //     headers: {
-  //       Authorization: `Bearer ${YELP_API_KEY}`,
-  //       Origin: "http://localhost:3000",
-  //       "Content-Type": "application/json",
-  //       withCredentials: true,
-  //     },
-  //     params: {
-  //       location: "Montreal",
-  //       limit: 50,
-  //       offset: 51,
-  //     },
-  //   };
-  //   return fetch(yelpUrl, apiOptions)
-  //     .then((res) => res.json())
-  //     .then((json) => {
-  //       console.log(json.businesses);
-  //       setAllStore(json.businesses);
-  //     });
-  // };
-
-  // let currentUrl =
-  //   "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?limit=50";
-  // useEffect(() => {
-  //   fetch(`${currentUrl}`)
-  //     .then((res) => res.json())
-  //     .then((json) => {
-  //       console.log(json.businesses);
-  //       setAllStore(json.businesses);
-  //     });
-  //   // getRestaurantFromYelp();
-  // }, []);
-
-  // const getBarsFromYelp = () => {
-  //   const yelpUrl =
-  //     "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bars&location=montreal";
-
-  //   const apiOptions = {
-  //     headers: {
-  //       Authorization: `Bearer ${YELP_API_KEY}`,
-  //       Origin: "http://localhost:3000",
-  //       "Content-Type": "application/json",
-  //       withCredentials: true,
-  //     },
-  //   };
-  //   return fetch(yelpUrl, apiOptions)
-  //     .then((res) => res.json())
-  //     .then((json) => setRestaurantData(json.businesses));
-  // };
-  // console.log(restaurantData);
-
-  // useEffect(() => {
-  //   getBarsFromYelp();
-  // }, []);
-
   return (
     <AllStoresContext.Provider
       value={{
@@ -123,7 +59,6 @@ const AllStoresProvider = ({ children }) => {
         restaurantData,
         barsData,
         shoppingData,
-        allStore,
       }}
     >
       {children}

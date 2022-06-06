@@ -24,25 +24,15 @@ const Shopping = () => {
                   />
 
                   <div className="shopping-info">
-                    <div className="shopping-subtitle">{shopping.name}</div>
+                    <div>
+                      <div className="shopping-subtitle">{shopping.name}</div>
 
-                    <div className="shopping-category">
-                      <p>
-                        {shopping.price}{" "}
+                      <div className="shopping-category">
+                        <span className="shopping-price">{shopping.price}</span>
                         <span className="shopping-tag">
                           {shopping.categories[0].title}
                         </span>
-                      </p>
-                    </div>
-
-                    <p className="shopping-rating">{shopping.rating}</p>
-
-                    <div className="shopping-contact">
-                      <p className="shopping-phone">{shopping.display_phone}</p>
-                      <div className="shopping-address">
-                        <p>{shopping.location.display_address[0]}</p>
-                        <p>{shopping.location.display_address[1]}</p>
-                        <p>{shopping.location.display_address[2]}</p>
+                        <p className="shopping-rating">{shopping.rating}</p>
                       </div>
                     </div>
                   </div>
