@@ -1,3 +1,7 @@
+import Bars from "../allStores/bars/Bars";
+import Coffee from "../allStores/coffee/Coffee";
+import Restaurants from "../allStores/restaurant/Restaurants";
+import Shopping from "../allStores/shopping/Shopping";
 import SearchBar from "../searchBar/SearchBar";
 
 import "./Search.css";
@@ -34,6 +38,10 @@ const Search = () => {
   return (
     <div>
       <SearchBar />
+      {/* <Restaurants />
+      <Coffee />
+      <Bars />
+      <Shopping /> */}
     </div>
   );
 };

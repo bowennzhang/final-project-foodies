@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Ubuntu:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;800&family=Righteous&family=Ubuntu:wght@300;400;700&display=swap");
 
 .nav-bar {
   font-family: "Poppins", sans-serif;
@@ -18,7 +18,7 @@
   font-size: 20px;
   font-weight: 700;
   color: #feae49;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Righteous", cursive;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }

@@ -1,9 +1,11 @@
 "use strict";
 
+// import axios from "axios";
+
 const { MongoClient } = require("mongodb");
 require("dotenv").config();
 
-const { MONGO_URI } = process.env;
+const { MONGO_URI, YELP_API_KEY } = process.env;
 
 const options = {
   useNewUrlParser: true,
@@ -70,4 +72,53 @@ const getShopping = async (req, res) => {
   }
 };
 
-module.exports = { getRestaurants, getCoffee, getBars, getShopping };
+const getSingleStore = async (req, res) => {
+  try {
+    const client = new MongoClient(MONGO_URI, options);
+    await client.connect();
+    const db = client.db("foodies");
+
+    const id = req.params.id;
+
+    const singleStore = await db.collection("allStores").findOne({ id });
+
+    res.status(200).json({ status: 200, id, data: singleStore });
+
+    client.close();
+  } catch (err) {
+    res.status(500).json({ status: 500, message: err.message });
+  }
+};
+
+// const getAllStore = async (req, res) => {
+//   try {
+//     const config = {
+//       headers: {
+//         Authorization: `Bearer ${MONGO_URI}`,
+//       },
+//       params: {
+//         term: "restaurants",
+//         location: "montreal",
+//         radius: 1609,
+//         sort_by: "relevance",
+//         limit: 50,
+//       },
+//     };
+//     axios
+//       .get("https://api.yelp.com/v3/businesses/search", config)
+//       .then((response) => {
+//         console.log(response); //These are the results sent back from the API!
+//       });
+//   } catch (err) {
+//     res.status(500).json({ status: 500, message: err.message });
+//   }
+// };
+
+module.exports = {
+  getRestaurants,
+  getCoffee,
+  getBars,
+  getShopping,
+  getSingleStore,
+  // getAllStore,
+};

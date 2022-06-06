@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { NavLink, useParams } from "react-router-dom";
 
 import { AllStoresContext } from "../../contexts/allStoresContext";
 
@@ -14,37 +15,39 @@ const Coffee = () => {
         <>
           {coffeeData.map((coffee) => {
             return (
-              <div key={coffee._id} className="coffee-result">
-                <img
-                  src={coffee.image_url}
-                  alt="business"
-                  className="coffee-image"
-                />
+              <NavLink key={coffee._id} to={`/storeDetails/${coffee.id}`}>
+                <div className="coffee-result">
+                  <img
+                    src={coffee.image_url}
+                    alt="business"
+                    className="coffee-image"
+                  />
 
-                <div className="coffee-info">
-                  <div className="coffee-subtitle">{coffee.name}</div>
+                  <div className="coffee-info">
+                    <div className="coffee-subtitle">{coffee.name}</div>
 
-                  <div className="coffee-category">
-                    <p>
-                      {coffee.price}{" "}
-                      <span className="coffee-tag">
-                        {coffee.categories[0].title}
-                      </span>
-                    </p>
-                  </div>
+                    <div className="coffee-category">
+                      <p>
+                        {coffee.price}{" "}
+                        <span className="coffee-tag">
+                          {coffee.categories[0].title}
+                        </span>
+                      </p>
+                    </div>
 
-                  <p className="coffee-rating">{coffee.rating}</p>
+                    <p className="coffee-rating">{coffee.rating}</p>
 
-                  <div className="coffee-contact">
-                    <p className="coffee-phone">{coffee.display_phone}</p>
-                    <div className="coffee-address">
-                      <p>{coffee.location.display_address[0]}</p>
-                      <p>{coffee.location.display_address[1]}</p>
-                      <p>{coffee.location.display_address[2]}</p>
+                    <div className="coffee-contact">
+                      <p className="coffee-phone">{coffee.display_phone}</p>
+                      <div className="coffee-address">
+                        <p>{coffee.location.display_address[0]}</p>
+                        <p>{coffee.location.display_address[1]}</p>
+                        <p>{coffee.location.display_address[2]}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </NavLink>
             );
           })}
         </>

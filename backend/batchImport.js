@@ -40,6 +40,11 @@ const batchImport = async () => {
     // Declare 'allBars' variable and transfer all flights information to 'bars' collection in MongoDB
     const allShopping = await db.collection("shopping").insertMany(shopping);
 
+    await db.collection("allStores").insertMany(restaurants);
+    await db.collection("allStores").insertMany(bars);
+    await db.collection("allStores").insertMany(coffee);
+    await db.collection("allStores").insertMany(shopping);
+
     // Close database server connection
     client.close();
   } catch (err) {

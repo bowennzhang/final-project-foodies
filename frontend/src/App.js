@@ -13,6 +13,7 @@ import Restaurants from "./components/allStores/restaurant/Restaurants";
 import Coffee from "./components/allStores/coffee/Coffee";
 import Bars from "./components/allStores/bars/Bars";
 import Shopping from "./components/allStores/shopping/Shopping";
+import StoreDetails from "./components/storeDetails/StoreDetails";
 
 // import StartingPage from "./components/startPage/StartingPage";
 
@@ -52,6 +53,10 @@ function App() {
 
               <Route path="/shopping">
                 <Shopping />
+              </Route>
+
+              <Route path="/storeDetails/:id">
+                <StoreDetails />
               </Route>
 
               <Route path="/profile">

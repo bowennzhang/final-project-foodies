@@ -11,6 +11,11 @@
   min-height: 800px;
 }
 
+.coffee-container a {
+  text-decoration: none;
+  color: black;
+}
+
 .coffee-result {
   display: flex;
   margin-bottom: 10px;
