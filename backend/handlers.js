@@ -92,8 +92,11 @@ const getSingleStore = async (req, res) => {
 };
 
 const getAllStore = async (req, res) => {
-  const yelpUrl =
-    "https://api.yelp.com/v3/businesses/search?term=restaurants&location=montreal&limit=20";
+  const page = parseInt(req.params.page) || 1;
+  const limit = parseInt(req.params.limit) || 20;
+  const offset = parseInt(page - 1) * limit;
+
+  const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=montreal&limit=20&offset=${offset}`;
 
   try {
     const apiOptions = {
@@ -107,8 +110,6 @@ const getAllStore = async (req, res) => {
 
     const response = await fetch(yelpUrl, apiOptions);
     const data = await response.json();
-
-    console.log(data);
 
     res.status(200).json({ status: 200, data });
   } catch (err) {
@@ -117,8 +118,11 @@ const getAllStore = async (req, res) => {
 };
 
 const getStoreDetailsFromAll = async (req, res) => {
-  const yelpUrl =
-    "https://api.yelp.com/v3/businesses/search?term=restaurants&location=montreal&limit=20";
+  const page = parseInt(req.params.page) || 1;
+  const limit = parseInt(req.params.limit) || 20;
+  const offset = parseInt(page - 1) * limit;
+
+  const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=montreal&limit=20&offset=${offset}`;
 
   try {
     const apiOptions = {
@@ -132,22 +136,20 @@ const getStoreDetailsFromAll = async (req, res) => {
 
     const response = await fetch(yelpUrl, apiOptions);
     const data = await response.json();
-    // console.log(data);
+
     const id = req.params.id;
-    // console.log(Object.entries(data));
-    // console.log(id);
-    // const data1 = data.businesses;
-    // console.log(data1);
-    const result = Object.entries(data);
-    const result2 = result[0];
-    const result3 = result2[1];
 
-    const result4 = result3.filter((match) => {
-      return id === match.id;
-    });
-    console.log(result4);
+    // const result = Object.entries(data);
+    console.log(data);
+    // const result2 = result[0];
+    // const result3 = result2[1];
 
-    res.status(200).json({ status: 200, id, result4 });
+    // const result4 = result3.filter((match) => {
+    //   return id === match.id;
+    // });
+    // console.log(result);
+
+    res.status(200).json({ status: 200, id, data });
   } catch (err) {
     res.status(500).json({ status: 500, message: err.message });
   }

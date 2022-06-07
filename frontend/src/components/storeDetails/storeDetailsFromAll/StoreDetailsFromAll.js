@@ -12,11 +12,11 @@ const StoreDetailsFromAll = () => {
   const [singleStore, setSingleStore] = useState({});
 
   useEffect(() => {
-    fetch(`/api/get-all/${id}`)
+    fetch(`/api/get-all/:page/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        setSingleStore(data.result4[0]);
-        console.log(data);
+        setSingleStore(data.data.businesses);
+        console.log(data.data.businesses);
         setIsLoaded(true);
       })
       .catch((err) => {
@@ -36,10 +36,10 @@ const StoreDetailsFromAll = () => {
               <p>review count{singleStore.review_count}</p>
               <p>{singleStore.display_phone}</p>
               <div>
-                <p>{singleStore.location.display_address[0]}</p>
+                {/* <p>{singleStore.location.display_address[0]}</p>
                 <p>{singleStore.location.display_address[1]}</p>
                 <p>{singleStore.location.display_address[2]}</p>
-                <p>{singleStore.location.display_address[3]}</p>
+                <p>{singleStore.location.display_address[3]}</p> */}
               </div>
               <button className="store-details-btn">save</button>
             </div>

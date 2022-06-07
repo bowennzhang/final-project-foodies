@@ -24,6 +24,8 @@ const {
   getStoreDetailsFromAll,
 } = require("./handlers");
 
+const { getArchive, createNewArchive } = require("./userHandlers");
+
 express()
   // Below are methods that are included in express(). We chain them for convenience.
   // --------------------------------------------------------------------------------
@@ -42,8 +44,12 @@ express()
 
   .get("/api/get-store/:id", getSingleStore)
 
-  .get("/api/get-all", getAllStore)
-  .get("/api/get-all/:id", getStoreDetailsFromAll)
+  .get("/api/get-all/:page", getAllStore)
+  .get("/api/get-all/:page/:id", getStoreDetailsFromAll)
+
+  // Auth0
+  .get("/api/archives/:user", getArchive)
+  .post("/api/archive/create", createNewArchive)
 
   // this is our catch all endpoint.
   .get("*", (req, res) => {

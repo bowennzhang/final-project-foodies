@@ -5,7 +5,7 @@ import SearchBar from "../searchBar/SearchBar";
 import "./Search.css";
 import SearchResult from "./searchResult/SearchResult";
 
-const Search = () => {
+const Search = ({ results }) => {
   const [restaurantData, setRestaurantData] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -13,7 +13,7 @@ const Search = () => {
     fetch("/api/get-all")
       .then((res) => res.json())
       .then((data) => {
-        setRestaurantData(data.data.businesses);
+        setRestaurantData(data.businesses);
 
         setIsLoaded(true);
       });
@@ -22,7 +22,11 @@ const Search = () => {
   return (
     <div>
       <SearchBar />
-      <SearchResult restaurants={restaurantData} isLoaded={isLoaded} />
+      <SearchResult
+        restaurants={restaurantData}
+        results={results}
+        isLoaded={isLoaded}
+      />
     </div>
   );
 };

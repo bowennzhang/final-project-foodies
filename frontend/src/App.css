@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap");
+
+.paginationBtns {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+.paginationBtns a {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  margin: 8px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  box-shadow: 5px 4px 15px rgba(174, 174, 174, 0.4);
+}
+
+.paginationBtns a:hover {
+  background-color: #feae49;
+  color: white;
+}
+
+.paginationActive a {
+  background-color: #feae49;
+  color: white;
+}
+
+.page-btn {
+  margin-left: auto;
+  margin-right: auto;
+}

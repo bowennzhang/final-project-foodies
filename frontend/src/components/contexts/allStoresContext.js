@@ -9,6 +9,8 @@ const AllStoresProvider = ({ children }) => {
   const [barsData, setBarsData] = useState([]);
   const [shoppingData, setShoppingData] = useState([]);
 
+  const [storesToShowRestaurant, setStoresToShowRestaurant] = useState([]);
+
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -16,6 +18,8 @@ const AllStoresProvider = ({ children }) => {
       .then((res) => res.json())
       .then((data) => {
         setRestaurantData(data.data);
+
+        setStoresToShowRestaurant(data.data.slice(0, 50));
 
         setIsLoaded(true);
       });
@@ -59,6 +63,7 @@ const AllStoresProvider = ({ children }) => {
         restaurantData,
         barsData,
         shoppingData,
+        storesToShowRestaurant,
       }}
     >
       {children}
