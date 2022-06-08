@@ -45,7 +45,7 @@ function App() {
         }
       });
   }, [pageNumber]);
-  console.log(results);
+  // console.log(results);
 
   //auth0
   const { isLoading } = useAuth0();
@@ -91,7 +91,7 @@ function App() {
 
               <Route path="/search">
                 <div className="restaurant-container">
-                  <Search results={results} />
+                  <Search results={results} pageNumber={pageNumber} />
                   <div className="page-btn">
                     <ReactPaginate
                       previousLabel={"previous"}
@@ -143,7 +143,7 @@ function App() {
                 <StoreDetails />
               </Route>
 
-              <Route path="/storeDetail/:id">
+              <Route path="/storeDetail/:page/:id">
                 <StoreDetailsFromAll />
               </Route>
 

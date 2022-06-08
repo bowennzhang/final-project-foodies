@@ -3,14 +3,17 @@ import Loading from "../../reusable/Loading";
 
 import "./SearchResult.css";
 
-const SearchResult = ({ isLoaded, restaurants, results }) => {
+const SearchResult = ({ isLoaded, results, pageNumber }) => {
   return (
     <div className="search-results-container">
       {isLoaded ? (
         <>
           {results.businesses.map((restaurant) => {
             return (
-              <NavLink key={restaurant.id} to={`storeDetail/${restaurant.id}`}>
+              <NavLink
+                key={restaurant.id}
+                to={`storeDetail/${pageNumber}/${restaurant.id}`}
+              >
                 <div className="search-results-result">
                   <img
                     src={`${restaurant.image_url}`}

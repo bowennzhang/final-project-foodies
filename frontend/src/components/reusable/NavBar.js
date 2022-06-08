@@ -20,10 +20,6 @@ const NavBar = () => {
           <span className="options">Search</span>
         </NavLink>
 
-        <NavLink to="/about" activeClassName="active" className="nav-links">
-          <span className="options">About</span>
-        </NavLink>
-
         <NavLink to="/profile" activeClassName="active" className="nav-links">
           <span className="options">Profile</span>
         </NavLink>

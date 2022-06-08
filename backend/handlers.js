@@ -135,21 +135,23 @@ const getStoreDetailsFromAll = async (req, res) => {
     };
 
     const response = await fetch(yelpUrl, apiOptions);
+
     const data = await response.json();
 
     const id = req.params.id;
 
-    // const result = Object.entries(data);
-    console.log(data);
-    // const result2 = result[0];
-    // const result3 = result2[1];
+    const result = Object.entries(data);
+    console.log(result);
+    const result2 = result[0];
+    const result3 = result2[1];
 
-    // const result4 = result3.filter((match) => {
-    //   return id === match.id;
-    // });
-    // console.log(result);
+    const result4 = result3.filter((match) => {
+      return id === match.id;
+    });
 
-    res.status(200).json({ status: 200, id, data });
+    console.log(result4);
+
+    res.status(200).json({ status: 200, id, result4 });
   } catch (err) {
     res.status(500).json({ status: 500, message: err.message });
   }

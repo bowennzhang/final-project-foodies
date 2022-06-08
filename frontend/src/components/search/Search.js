@@ -5,7 +5,7 @@ import SearchBar from "../searchBar/SearchBar";
 import "./Search.css";
 import SearchResult from "./searchResult/SearchResult";
 
-const Search = ({ results }) => {
+const Search = ({ results, pageNumber }) => {
   const [restaurantData, setRestaurantData] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -25,6 +25,7 @@ const Search = ({ results }) => {
       <SearchResult
         restaurants={restaurantData}
         results={results}
+        pageNumber={pageNumber}
         isLoaded={isLoaded}
       />
     </div>

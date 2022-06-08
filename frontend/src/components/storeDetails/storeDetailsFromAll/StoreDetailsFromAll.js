@@ -6,17 +6,17 @@ import Loading from "../../reusable/Loading";
 import "./StoreDetailsFromAll.css";
 
 const StoreDetailsFromAll = () => {
-  const { id } = useParams();
-
+  const { page, id } = useParams();
+  console.log(page, id);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [singleStore, setSingleStore] = useState({});
+  const [singleStore, setSingleStore] = useState();
 
   useEffect(() => {
-    fetch(`/api/get-all/:page/${id}`)
+    fetch(`/api/get-all/${page}/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        setSingleStore(data.data.businesses);
-        console.log(data.data.businesses);
+        setSingleStore(data.result4[0]);
+
         setIsLoaded(true);
       })
       .catch((err) => {
@@ -26,6 +26,7 @@ const StoreDetailsFromAll = () => {
 
   return (
     <>
+      {console.log(singleStore)}
       {isLoaded ? (
         <div className="store-details-container">
           <div className="store-details-card">
@@ -36,10 +37,10 @@ const StoreDetailsFromAll = () => {
               <p>review count{singleStore.review_count}</p>
               <p>{singleStore.display_phone}</p>
               <div>
-                {/* <p>{singleStore.location.display_address[0]}</p>
+                <p>{singleStore.location.display_address[0]}</p>
                 <p>{singleStore.location.display_address[1]}</p>
                 <p>{singleStore.location.display_address[2]}</p>
-                <p>{singleStore.location.display_address[3]}</p> */}
+                <p>{singleStore.location.display_address[3]}</p>
               </div>
               <button className="store-details-btn">save</button>
             </div>
