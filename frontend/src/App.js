@@ -22,11 +22,11 @@ import StoreDetailsFromAll from "./components/storeDetails/storeDetailsFromAll/S
 
 import "./App.css";
 import SearchResult from "./components/search/searchResult/SearchResult";
-// import StartingPage from "./components/startPage/StartingPage";
+import StartingPage from "./components/startPage/StartingPage";
 
 function App() {
   const { storesToShowRestaurant } = useContext(AllStoresContext);
-
+  const [displayLanding, setDisplayLanding] = useState(true);
   const [resultsTotal, setResultsTotal] = useState(0);
   const [results, setResults] = useState([]);
 
@@ -67,11 +67,6 @@ function App() {
     setPageNumber(selected);
   };
 
-  // api
-  // const displayStore = results.businesses.map((store) => {
-  //   return <Search key={store.id} store={store} />;
-  // });
-
   const handlePageClick = ({ selected }) => {
     setPageNumber(selected);
   };
@@ -79,11 +74,14 @@ function App() {
   return (
     <>
       <Router>
+        {displayLanding && (
+          <StartingPage setDisplayLanding={setDisplayLanding} />
+        )}
         <Wrapper>
           <GlobalStyles />
-          {/* <StartingPage /> */}
           <Wrapper>
             <NavBar />
+
             <Switch>
               <Route exact path="/">
                 <Home />
@@ -94,8 +92,8 @@ function App() {
                   <Search results={results} pageNumber={pageNumber} />
                   <div className="page-btn">
                     <ReactPaginate
-                      previousLabel={"previous"}
-                      nextLabel={"next"}
+                      previousLabel={"<"}
+                      nextLabel={">"}
                       pageCount={Math.ceil(resultsTotal / 20)}
                       onPageChange={handlePageClick}
                       containerClassName={"paginationBtns"}

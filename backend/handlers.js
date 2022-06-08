@@ -91,6 +91,22 @@ const getSingleStore = async (req, res) => {
   }
 };
 
+const getAllStoreForSearchBar = async (req, res) => {
+  try {
+    const client = new MongoClient(MONGO_URI, options);
+    await client.connect();
+    const db = client.db("foodies");
+
+    const allShopping = await db.collection("allStores").find().toArray();
+
+    res.status(200).json({ status: 200, data: allShopping });
+
+    client.close();
+  } catch (err) {
+    res.status(500).json({ status: 500, message: err.message });
+  }
+};
+
 const getAllStore = async (req, res) => {
   const page = parseInt(req.params.page) || 1;
   const limit = parseInt(req.params.limit) || 20;
@@ -110,7 +126,7 @@ const getAllStore = async (req, res) => {
 
     const response = await fetch(yelpUrl, apiOptions);
     const data = await response.json();
-
+    console.log(data);
     res.status(200).json({ status: 200, data });
   } catch (err) {
     res.status(500).json({ status: 500, message: err.message });
@@ -165,4 +181,5 @@ module.exports = {
   getSingleStore,
   getAllStore,
   getStoreDetailsFromAll,
+  getAllStoreForSearchBar,
 };

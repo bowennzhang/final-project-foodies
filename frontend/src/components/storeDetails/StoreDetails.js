@@ -34,7 +34,7 @@ const StoreDetails = () => {
               <p className="store-details-title">{singleStore.name}</p>
               <p>{singleStore.price}</p>
               <p>{singleStore.rating}</p>
-              <p>review count{singleStore.review_count}</p>
+              <p>{singleStore.review_count} reviews</p>
               <p>{singleStore.display_phone}</p>
               <div>
                 <p>{singleStore.location.display_address[0]}</p>

@@ -1,29 +1,39 @@
 import { useState, useEffect } from "react";
 
-import SearchBar from "../searchBar/SearchBar";
-
-import "./Search.css";
+import SearchBar from "./SearchBar";
 import SearchResult from "./searchResult/SearchResult";
 
+import "./Search.css";
+
 const Search = ({ results, pageNumber }) => {
-  const [restaurantData, setRestaurantData] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [allStoresFromDb, setAllStoresFromDb] = useState();
 
   useEffect(() => {
     fetch("/api/get-all")
       .then((res) => res.json())
       .then((data) => {
-        setRestaurantData(data.businesses);
+        setIsLoaded(true);
+      });
+  }, []);
 
+  useEffect(() => {
+    fetch("/api/get-allStore")
+      .then((res) => res.json())
+      .then((data) => {
+        setAllStoresFromDb(data.data);
         setIsLoaded(true);
       });
   }, []);
 
   return (
     <div>
-      <SearchBar />
+      <SearchBar
+        results={results}
+        isLoaded={isLoaded}
+        allStoresFromDb={allStoresFromDb}
+      />
       <SearchResult
-        restaurants={restaurantData}
         results={results}
         pageNumber={pageNumber}
         isLoaded={isLoaded}

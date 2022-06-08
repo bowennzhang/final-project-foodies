@@ -22,6 +22,7 @@ const {
   getSingleStore,
   getAllStore,
   getStoreDetailsFromAll,
+  getAllStoreForSearchBar,
 } = require("./handlers");
 
 const { getArchive, createNewArchive } = require("./userHandlers");
@@ -37,6 +38,7 @@ express()
   // Any requests for static files will go into the public folder
   .use(express.static("public"))
 
+  // fetch data from mongodb
   .get("/api/get-restaurants", getRestaurants)
   .get("/api/get-coffee", getCoffee)
   .get("/api/get-bars", getBars)
@@ -44,6 +46,9 @@ express()
 
   .get("/api/get-store/:id", getSingleStore)
 
+  .get("/api/get-allStore", getAllStoreForSearchBar)
+
+  // fetch data from api
   .get("/api/get-all/:page", getAllStore)
   .get("/api/get-all/:page/:id", getStoreDetailsFromAll)
 

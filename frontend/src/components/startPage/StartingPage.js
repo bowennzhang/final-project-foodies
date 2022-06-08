@@ -1,8 +1,13 @@
 import "./StartingPage.css";
 
-const StartingPage = () => {
+const StartingPage = ({ setDisplayLanding }) => {
   return (
-    <div className="container">
+    <div
+      onClick={() => {
+        setDisplayLanding(false);
+      }}
+      className="container"
+    >
       <div className="words word-1">
         <span>W</span>
         <span>E</span>
