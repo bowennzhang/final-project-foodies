@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams, NavLink } from "react-router-dom";
 
+import { useAuth0 } from "@auth0/auth0-react";
+
 import Loading from "../reusable/Loading";
 
 import "./StoreDetails.css";
 
 const StoreDetails = () => {
   const { id } = useParams();
+  const { user } = useAuth0();
 
   const [isLoaded, setIsLoaded] = useState(false);
   const [singleStore, setSingleStore] = useState({});
@@ -23,6 +26,30 @@ const StoreDetails = () => {
         console.error(err);
       });
   }, [id]);
+
+  const handleLike = (e) => {
+    // e.preventDefault();
+    fetch(`/api/update-favorites/?id=${singleStore.id}&email=${user.email}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        // console.log(data, "fave data");
+        if (data.status === 400) {
+          // setErrorMessage(data.message);
+          console.log("errorDrinks");
+        } else if (data.status === 200) {
+          console.log("saved stores", data);
+          // setStatus(data.status);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
 
   //   console.log(singleStore.location.address1);
   return (
@@ -42,7 +69,9 @@ const StoreDetails = () => {
                 <p>{singleStore.location.display_address[2]}</p>
                 <p>{singleStore.location.display_address[3]}</p>
               </div>
-              <button className="store-details-btn">save</button>
+              <button onClick={handleLike} className="store-details-btn">
+                save
+              </button>
             </div>
             <img
               className="store-details-image"

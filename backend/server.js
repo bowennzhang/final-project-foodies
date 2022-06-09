@@ -25,7 +25,7 @@ const {
   getAllStoreForSearchBar,
 } = require("./handlers");
 
-const { getArchive, createNewArchive } = require("./userHandlers");
+const { getArchive, addUser, updateFavorites } = require("./userHandlers");
 
 express()
   // Below are methods that are included in express(). We chain them for convenience.
@@ -54,7 +54,9 @@ express()
 
   // Auth0
   .get("/api/archives/:user", getArchive)
-  .post("/api/archive/create", createNewArchive)
+  .post("/api/add-user", addUser)
+
+  .post("/api/update-favorites", updateFavorites)
 
   // this is our catch all endpoint.
   .get("*", (req, res) => {
