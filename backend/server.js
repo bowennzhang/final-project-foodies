@@ -25,7 +25,13 @@ const {
   getAllStoreForSearchBar,
 } = require("./handlers");
 
-const { getArchive, addUser, updateFavorites } = require("./userHandlers");
+const {
+  getArchive,
+  addUser,
+  addComment,
+  updateFavorites,
+  getComment,
+} = require("./userHandlers");
 
 express()
   // Below are methods that are included in express(). We chain them for convenience.
@@ -53,8 +59,10 @@ express()
   .get("/api/get-all/:page/:id", getStoreDetailsFromAll)
 
   // Auth0
-  .get("/api/archives/:user", getArchive)
+  // .get("/api/archives/:user", getArchive)
   .post("/api/add-user", addUser)
+  .post("/api/new-comment", addComment)
+  .get("/api/new-comment", getComment)
 
   .post("/api/update-favorites", updateFavorites)
 
