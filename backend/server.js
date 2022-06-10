@@ -62,7 +62,7 @@ express()
   // .get("/api/archives/:user", getArchive)
   .post("/api/add-user", addUser)
   .post("/api/new-comment", addComment)
-  .get("/api/new-comment", getComment)
+  .get("/api/get-comment", getComment)
 
   .post("/api/update-favorites", updateFavorites)
 

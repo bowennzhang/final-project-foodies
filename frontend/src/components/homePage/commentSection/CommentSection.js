@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
+import Loading from "../../reusable/Loading";
 import "./CommentSection.css";
 
 const CommentSection = () => {
   const [commentInput, setCommentInput] = useState("");
-  const [comment, setComment] = useState();
+  const [comments, setComments] = useState();
+  const [isLoaded, setIsLoaded] = useState(false);
   const { user } = useAuth0();
 
   const handleNewComment = (e) => {
     e.preventDefault();
-
     fetch("/api/new-comment", {
       body: JSON.stringify({
         email: user.email,
@@ -34,14 +35,26 @@ const CommentSection = () => {
   };
 
   useEffect(() => {
-    fetch("/api/new-comment")
+    fetch("/api/get-comment")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.data);
-        setComment(data.data);
+        setComments(data.data);
+        setIsLoaded(true);
       });
-  }, [commentInput]);
+  }, []);
 
+  // console.log(comments);
+
+  if (!isLoaded) {
+    return <Loading />;
+  }
+
+  const eachUsersComments = comments.map((comment, index) => {
+    return comment.comments.map((el) => {
+      return el.picture;
+    });
+  });
+  console.log(comments);
   return (
     <>
       <div className="comment-container">
@@ -67,7 +80,21 @@ const CommentSection = () => {
             submit
           </button>
         </form>
-        <div></div>
+        <div className="comments-container">
+          {comments.map((comment) => {
+            return comment.comments.map((el, index) => {
+              return (
+                <div className="comments-card" key={index}>
+                  <img className="comments-image" src={el.url} alt="" />
+                  <div className="comments-info">
+                    <div className="comments-name">{el.name}</div>
+                    <p className="comments-comment">{el.comment}</p>
+                  </div>
+                </div>
+              );
+            });
+          })}
+        </div>
       </div>
     </>
   );

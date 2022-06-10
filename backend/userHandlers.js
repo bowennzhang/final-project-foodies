@@ -113,7 +113,7 @@ const addComment = async (req, res) => {
   const result = await db.collection("users").updateOne(
     { email: email },
     {
-      $set: {
+      $push: {
         comments: { user: user, comment: comment, name: name, url: url },
       },
     }

@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
   margin-top: 100px;
   border-top: 1px solid #e6e5de;
-  border-bottom: 1px solid #e6e5de;
+  /* border-bottom: 1px solid #e6e5de; */
   height: 200px;
   width: 800px;
   margin-left: auto;
@@ -50,4 +50,48 @@
 .comment-btn:hover {
   background: #aaaaaa;
   transition: all 0.3s ease-in-out;
+}
+
+.comments-container {
+  background: #fff;
+  min-width: 400px;
+  margin-top: 10px;
+  z-index: 100;
+  box-shadow: 5px 4px 15px rgba(174, 174, 174, 0.4);
+  border-radius: 10px;
+  min-height: 150px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.comments-card {
+  max-width: 370px;
+  border-bottom: 1px solid #e6e5de;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.comments-image {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comments-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+
+.comments-name {
+  font-size: 5px;
+}
+
+.comments-comment {
+  font-size: 6px;
 }

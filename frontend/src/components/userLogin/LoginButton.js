@@ -6,7 +6,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useEffect, useState } from "react";
 
 const LoginButton = () => {
-  const [currentUser, setCurrentUser] = useState({});
+  const [currentuser, setCurrentuser] = useState({});
   const { loginWithRedirect, isAuthenticated, user } = useAuth0();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const LoginButton = () => {
         .then((res) => res.json())
         .then((data) => {
           console.log(data.message);
-          setCurrentUser(data.message);
+          setCurrentuser(data.message);
         });
     }
   }, [user]);
@@ -31,7 +31,7 @@ const LoginButton = () => {
   return (
     !isAuthenticated && (
       <Button onClick={() => loginWithRedirect()}>
-        <AccountCircleIcon currentUser={currentUser} />
+        <AccountCircleIcon currentuser={currentuser} />
       </Button>
     )
   );
