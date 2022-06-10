@@ -8,6 +8,7 @@ const CommentSection = () => {
   const [commentInput, setCommentInput] = useState("");
   const [comments, setComments] = useState();
   const [isLoaded, setIsLoaded] = useState(false);
+  const [posted, setPosted] = useState(false);
   const { user } = useAuth0();
 
   const handleNewComment = (e) => {
@@ -27,6 +28,8 @@ const CommentSection = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        setPosted((prev) => !prev);
+        setCommentInput("");
         console.log("success", data);
       })
       .catch((err) => {
@@ -41,19 +44,11 @@ const CommentSection = () => {
         setComments(data.data);
         setIsLoaded(true);
       });
-  }, []);
-
-  // console.log(comments);
+  }, [posted]);
 
   if (!isLoaded) {
     return <Loading />;
   }
-
-  const eachUsersComments = comments.map((comment, index) => {
-    return comment.comments.map((el) => {
-      return el.picture;
-    });
-  });
   console.log(comments);
   return (
     <>
@@ -82,17 +77,19 @@ const CommentSection = () => {
         </form>
         <div className="comments-container">
           {comments.map((comment) => {
-            return comment.comments.map((el, index) => {
-              return (
-                <div className="comments-card" key={index}>
-                  <img className="comments-image" src={el.url} alt="" />
-                  <div className="comments-info">
-                    <div className="comments-name">{el.name}</div>
-                    <p className="comments-comment">{el.comment}</p>
+            if (comment.comments) {
+              return comment.comments.map((el, index) => {
+                return (
+                  <div className="comments-card" key={index}>
+                    <img className="comments-image" src={el.url} alt="" />
+                    <div className="comments-info">
+                      <div className="comments-name">{el.name}</div>
+                      <p className="comments-comment">{el.comment}</p>
+                    </div>
                   </div>
-                </div>
-              );
-            });
+                );
+              });
+            }
           })}
         </div>
       </div>
