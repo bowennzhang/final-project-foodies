@@ -52,3 +52,22 @@
   border-radius: 20px;
   cursor: pointer;
 }
+
+.details-home-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #c9c9c9;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.details-home-button:hover {
+  color: #feae49;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}

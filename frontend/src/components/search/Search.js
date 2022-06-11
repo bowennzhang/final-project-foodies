@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 import SearchBar from "./SearchBar";
 import SearchResult from "./searchResult/SearchResult";
 
 import "./Search.css";
+import { NavLink } from "react-router-dom";
 
 const Search = ({ results, pageNumber }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -33,6 +35,12 @@ const Search = ({ results, pageNumber }) => {
         isLoaded={isLoaded}
         allStoresFromDb={allStoresFromDb}
       />
+      <NavLink to="/">
+        <div className="search-home-button">
+          <ArrowBackIosIcon className="search-arrow" />
+          <p>Home</p>
+        </div>
+      </NavLink>
       <SearchResult
         results={results}
         pageNumber={pageNumber}

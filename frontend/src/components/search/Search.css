@@ -10,3 +10,20 @@
   margin-right: auto;
   padding-bottom: 50px;
 }
+
+.search-home-button {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #c9c9c9;
+  transition: all 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+.search-home-button:hover {
+  color: #feae49;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}

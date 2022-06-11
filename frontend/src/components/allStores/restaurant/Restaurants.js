@@ -1,20 +1,18 @@
 import { useContext } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 import { AllStoresContext } from "../../contexts/allStoresContext";
-
 import Loading from "../../reusable/Loading";
 import "./Restaurants.css";
 
 const Restaurants = ({ store }) => {
-  const { isLoaded, restaurantData } = useContext(AllStoresContext);
+  const { isLoaded } = useContext(AllStoresContext);
 
   return (
     <>
       {isLoaded ? (
         <>
-          {/* {restaurantData.map((restaurant) => { */}
-          {/* return ( */}
           <div className="restaurant-container">
             <NavLink key={store._id} to={`/storeDetails/${store.id}`}>
               <div className="restaurant-result">
@@ -40,8 +38,6 @@ const Restaurants = ({ store }) => {
               </div>
             </NavLink>
           </div>
-          {/* ); */}
-          {/* })} */}
         </>
       ) : (
         <Loading />

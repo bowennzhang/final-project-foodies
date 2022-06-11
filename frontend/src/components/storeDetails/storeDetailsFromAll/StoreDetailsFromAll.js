@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, NavLink } from "react-router-dom";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 import Loading from "../../reusable/Loading";
 
@@ -30,6 +31,12 @@ const StoreDetailsFromAll = () => {
       {isLoaded ? (
         <div className="store-details-container">
           <div className="store-details-card">
+            <NavLink to="/search">
+              <div className="details-home-button">
+                <ArrowBackIosIcon className="details-arrow" />
+                <p>Back</p>
+              </div>
+            </NavLink>
             <div className="store-details-info">
               <p className="store-details-title">{singleStore.name}</p>
               <p>{singleStore.price}</p>

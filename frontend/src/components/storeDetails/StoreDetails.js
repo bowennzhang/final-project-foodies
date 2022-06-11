@@ -57,10 +57,12 @@ const StoreDetails = () => {
             <div className="store-details-info">
               <p className="store-details-title">{singleStore.name}</p>
               <p>{singleStore.price}</p>
-              <p>{singleStore.rating}</p>
-              <p>{singleStore.review_count} reviews</p>
-              <p>{singleStore.display_phone}</p>
               <div>
+                <p className="store-details-rating">{singleStore.rating}</p>
+                <p>{singleStore.review_count} reviews</p>
+              </div>
+              <p>{singleStore.display_phone}</p>
+              <div className="store-details-address">
                 <p>{singleStore.location.display_address[0]}</p>
                 <p>{singleStore.location.display_address[1]}</p>
                 <p>{singleStore.location.display_address[2]}</p>

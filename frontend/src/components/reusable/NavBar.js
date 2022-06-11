@@ -12,7 +12,7 @@ const NavBar = () => {
         <p className="nav-logo">Foodies</p>
       </NavLink>
       <div>
-        <NavLink to="/" activeClassName="active" className="nav-links">
+        <NavLink to="/" className="nav-links">
           <span className="options">Home</span>
         </NavLink>
 
