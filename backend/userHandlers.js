@@ -96,7 +96,6 @@ const getComment = async (req, res) => {
 };
 
 ////////////////////////////////////////////////////////////////
-
 const updateFavorites = async (req, res) => {
   let favArray = [];
 
@@ -109,11 +108,11 @@ const updateFavorites = async (req, res) => {
     .findOne({ email: req.query.email });
 
   if (!result.favorites || result.favorites.length === 0) {
-    favArray = [{ id: req.query.id }];
+    favArray = [{ ...req.body }];
   } else if (result.favorites.some((el) => el.id === req.body.id)) {
     favArray = result.favorites.filter((el) => el.id !== req.body.id);
   } else {
-    favArray = [...result.favorites, { id: req.body.id, name: req.body.name }];
+    favArray = [...result.favorites, { ...req.body }];
   }
   const updatedResult = await db
     .collection("users")
@@ -128,5 +127,29 @@ const updateFavorites = async (req, res) => {
     : res.status(404).json({ status: 404, data: "Not Found" });
 };
 
-// export handler function
-module.exports = { addUser, addComment, getComment, updateFavorites };
+////////////////////////////////////////////////////////////////
+const getFavorites = async (req, res) => {
+  try {
+    const client = new MongoClient(MONGO_URI, options);
+    await client.connect();
+    const db = client.db("foodies");
+
+    const result = await db
+      .collection("users")
+      .findOne({ email: req.params.email });
+
+    client.close();
+    res.status(200).json({ status: 200, data: result.favorites });
+  } catch (err) {
+    console.log(err.message);
+    res.status(400).json({ status: 400, message: err.message });
+  }
+};
+
+module.exports = {
+  addUser,
+  addComment,
+  getComment,
+  updateFavorites,
+  getFavorites,
+};

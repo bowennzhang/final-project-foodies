@@ -8,6 +8,7 @@ const AllStoresProvider = ({ children }) => {
   const [coffeeData, setCoffeeData] = useState([]);
   const [barsData, setBarsData] = useState([]);
   const [shoppingData, setShoppingData] = useState([]);
+  const [update, setUpdated] = useState(false);
 
   const [storesToShowRestaurant, setStoresToShowRestaurant] = useState([]);
 
@@ -64,6 +65,8 @@ const AllStoresProvider = ({ children }) => {
         barsData,
         shoppingData,
         storesToShowRestaurant,
+        update,
+        setUpdated,
       }}
     >
       {children}

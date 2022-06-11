@@ -53,3 +53,14 @@
   border-radius: 20px;
   cursor: pointer;
 }
+
+.store-details-remove {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background: #e6e5de;
+  color: #3d424a;
+  font-size: 20px;
+  padding: 5px 0;
+  border-radius: 20px;
+  cursor: pointer;
+}

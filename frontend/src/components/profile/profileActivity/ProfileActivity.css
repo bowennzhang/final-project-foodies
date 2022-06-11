@@ -4,7 +4,6 @@
   width: 600px;
   margin-right: auto;
   margin-left: 230px;
-  margin-top: 30px;
 }
 
 .profileActivity-title {
@@ -14,6 +13,12 @@
   color: #feae49;
   border-bottom: 1px solid #e6e5de;
   padding-bottom: 10px;
+  width: 600px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: 30px;
 }
 
 .profileActivity-subtitle {
@@ -25,7 +30,10 @@
 
 .profileActivity-saved-image {
   width: 100px;
+  height: 120px;
+  object-fit: cover;
   margin-right: 20px;
+  border-radius: 10px;
 }
 
 .profileActivity-saved-details {

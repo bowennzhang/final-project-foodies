@@ -49,7 +49,7 @@ const CommentSection = () => {
   if (!isLoaded) {
     return <Loading />;
   }
-  console.log(comments);
+
   return (
     <>
       <div className="comment-container">

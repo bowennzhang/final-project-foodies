@@ -26,11 +26,11 @@ const {
 } = require("./handlers");
 
 const {
-  getArchive,
   addUser,
   addComment,
   updateFavorites,
   getComment,
+  getFavorites,
 } = require("./userHandlers");
 
 express()
@@ -61,11 +61,12 @@ express()
   // Auth0
   // .get("/api/archives/:user", getArchive)
   .post("/api/add-user", addUser)
+
   .post("/api/new-comment", addComment)
   .get("/api/get-comment", getComment)
 
   .post("/api/update-favorites", updateFavorites)
-
+  .get("/api/get-favorites/:email", getFavorites)
   // this is our catch all endpoint.
   .get("*", (req, res) => {
     res.status(404).json({
