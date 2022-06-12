@@ -31,6 +31,7 @@ const {
   updateFavorites,
   getComment,
   getFavorites,
+  deleteFavorites,
 } = require("./userHandlers");
 
 express()
@@ -67,6 +68,7 @@ express()
 
   .post("/api/update-favorites", updateFavorites)
   .get("/api/get-favorites/:email", getFavorites)
+  .delete("/api/delete-favorites/:email", deleteFavorites)
   // this is our catch all endpoint.
   .get("*", (req, res) => {
     res.status(404).json({

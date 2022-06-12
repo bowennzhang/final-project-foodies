@@ -109,3 +109,24 @@
   margin-top: 8px;
   line-height: 9px;
 }
+
+.profileActivity-remove {
+  border: none;
+  background: #e6e5de;
+  font-size: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileActivity-remove:hover {
+  background: #fb7057;
+  color: #fff;
+  cursor: pointer;
+}

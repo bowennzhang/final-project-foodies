@@ -1,10 +1,21 @@
 import { NavLink } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 import Loading from "../../reusable/Loading";
 import "./ProfileActivity.css";
 
 const ProfileActivity = ({ favor, loading }) => {
-  console.log(favor);
+  const { user } = useAuth0();
+
+  const handleDelete = () => {
+    fetch(`/api/delete-favorites/?&email=${user.email}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  };
+
   return (
     <>
       {loading ? (
@@ -41,6 +52,9 @@ const ProfileActivity = ({ favor, loading }) => {
               </div>
             </div>
           </NavLink>
+          <button onClick={handleDelete} className="profileActivity-remove">
+            x
+          </button>
         </div>
       ) : (
         <Loading />

@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from "react";
-import { useParams, NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import { useAuth0 } from "@auth0/auth0-react";
 
@@ -30,7 +30,6 @@ const StoreDetails = () => {
   }, [id]);
 
   const handleLike = (e) => {
-    // e.preventDefault();
     fetch(`/api/update-favorites/?&email=${user.email}`, {
       method: "POST",
       headers: {
@@ -48,7 +47,6 @@ const StoreDetails = () => {
       });
   };
 
-  //   console.log(singleStore.location.address1);
   return (
     <>
       {isLoaded ? (
