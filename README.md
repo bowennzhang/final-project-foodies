@@ -9,7 +9,8 @@ This project is made during the final two weeks of Concordia Bootcamp study. The
 ( all styles were created with pure css, no libraries )
 
 ### A little DEMO
-https://user-images.githubusercontent.com/93296331/173446192-250f1ae7-0f7a-45c2-9868-8768b4d481d6.mov
+![d51c670f2b6348ef5d00559af1bd8986656394dd](https://user-images.githubusercontent.com/93296331/173447251-63c9a486-73c5-407a-a30a-13fa9ef7d7b1.gif)
+
 
 ### Home page
 ![header!](asset/1.png)
