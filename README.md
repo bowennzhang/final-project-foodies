@@ -35,6 +35,10 @@ Users can leave comments
 
 ![restaurants!](asset/5.png)
 
+### Users can search restaurants
+
+![search!](asset/8.png)
+
 ### Restaurants details page
 
 Users can save restaurants by clicking the save button, and save them to the profile page
@@ -44,3 +48,5 @@ Users can save restaurants by clicking the save button, and save them to the pro
 
 Users can view their profile only after they login
 ![profile!](asset/7.png)
+
+### Personal project in 8 days.
