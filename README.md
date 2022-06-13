@@ -49,4 +49,4 @@ Users can save restaurants by clicking the save button, and save them to the pro
 Users can view their profile only after they login
 ![profile!](asset/7.png)
 
-Personal project in 8 days.
+Final project completed in 8 days.
