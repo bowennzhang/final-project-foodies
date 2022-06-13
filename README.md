@@ -30,3 +30,17 @@ You can find restaurants with different categories
 
 Users can leave comments
 ![comments!](asset/4.png)
+
+### Fetching data from YelpApi
+
+![restaurants!](asset/5.png)
+
+### Restaurants details page
+
+Users can save restaurants by clicking the save button, and save them to the profile page
+![restaurants detail!](asset/6.png)
+
+### User profile
+
+Users can view their profile only after they login
+![profile!](asset/7.png)
