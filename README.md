@@ -20,13 +20,13 @@ You can find more restaurants after clicking the 'find out more' button
 ### Categories section
 
 You can find restaurants with different categories
-![category!](asset/Screen Shot 2022-06-13 at 3.43.57 PM.png)
+![category!](asset/2.png)
 
 ### A few famous pleace in montreal
 
-![pleace!](asset/Screen Shot 2022-06-13 at 3.44.11 PM.png)
+![pleace!](asset/3.png)
 
 ### comments section
 
 Users can leave comments
-![comments!](asset/Screen Shot 2022-06-13 at 3.44.25 PM.png)
+![comments!](asset/4.png)
