@@ -1,28 +1,21 @@
-# Getting Started with Create React App
+# Foodies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Concordia Bootcamp Final Project
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+I am a food lover, when I know I could decide what I want to do for my final project, I decided right away that I want to create a an app about restaurants, and here it is!
+This project is made during the final two weeks of Concordia Bootcamp study. The technologies involved are React, Node, Express, MongoDB, and YelpApi.
+( all styles were created with pure css, no libraries )
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
+### A little DEMO
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Home page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Alt text](/assets/1.png?raw=true "create")
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
