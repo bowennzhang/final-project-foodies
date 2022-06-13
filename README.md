@@ -15,7 +15,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Home page
 
-![Alt text](/assets/1.png?raw=true "create")
+
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
