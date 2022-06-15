@@ -7,7 +7,7 @@ import "./MainSection.css";
 const MainSection = () => {
   return (
     <div className="main-section-container">
-      <p className="main-section-title">Places to explore in Montréal !</p>
+      <p className="main-section-title">A few famous pleace in Montréal !</p>
 
       <div className="main-section-card">
         <div className="main-section-content">
