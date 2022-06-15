@@ -54,6 +54,17 @@
   cursor: pointer;
 }
 
+.store-details-btn-before-login {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background: #e6e5de;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 .store-details-remove {
   font-family: "Poppins", sans-serif;
   border: none;
@@ -78,4 +89,10 @@
 
 .store-details-address {
   line-height: 18px;
+}
+
+.store-details-reminder {
+  font-size: 12px;
+  text-align: center;
+  color: #8d8d8d;
 }

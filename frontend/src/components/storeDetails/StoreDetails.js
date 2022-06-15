@@ -10,7 +10,7 @@ import "./StoreDetails.css";
 const StoreDetails = () => {
   const { update, setUpdated } = useContext(AllStoresContext);
   const { id } = useParams();
-  const { user } = useAuth0();
+  const { user, isAuthenticated } = useAuth0();
 
   const [isLoaded, setIsLoaded] = useState(false);
   const [singleStore, setSingleStore] = useState({});
@@ -71,9 +71,25 @@ const StoreDetails = () => {
                   remove
                 </button>
               ) : (
-                <button onClick={handleLike} className="store-details-btn">
-                  save
-                </button>
+                <>
+                  {!isAuthenticated ? (
+                    <>
+                      <button
+                        onClick={handleLike}
+                        className="store-details-btn-before-login"
+                      >
+                        save
+                      </button>
+                      <p className="store-details-reminder">
+                        Please login first to save
+                      </p>
+                    </>
+                  ) : (
+                    <button onClick={handleLike} className="store-details-btn">
+                      save
+                    </button>
+                  )}
+                </>
               )}
             </div>
             <img
