@@ -146,49 +146,10 @@ const getFavorites = async (req, res) => {
   }
 };
 
-////////////////////////////////////////////////////////////////
-const deleteFavorites = async (req, res) => {
-  let favArray = [];
-
-  try {
-    const client = new MongoClient(MONGO_URI, options);
-    await client.connect();
-    const db = client.db("foodies");
-
-    const result = await db
-      .collection("users")
-      .findOne({ email: req.params.email });
-
-    if (!result.favorites || result.favorites.length === 0) {
-      favArray = [{ ...req.body }];
-    } else if (result.favorites.some((el) => el.id === req.body.id)) {
-      favArray = result.favorites.filter((el) => el.id !== req.body.id);
-    } else {
-      favArray = [...result.favorites, { ...req.body }];
-    }
-
-    const deletedResult = await db
-      .collection("users")
-      .deleteOne(
-        { email: req.params.email },
-        { $set: { favorites: favArray } }
-      );
-
-    await client.close();
-
-    res
-      .status(200)
-      .json({ status: 200, message: "favorite restaurant deleted" });
-  } catch (err) {
-    res.status(400).json({ status: 400, message: err.message });
-  }
-};
-
 module.exports = {
   addUser,
   addComment,
   getComment,
   updateFavorites,
   getFavorites,
-  deleteFavorites,
 };
